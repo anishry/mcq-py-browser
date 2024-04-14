@@ -10,7 +10,7 @@ class MainWindow(QMainWindow):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl("http://testmcq.site/"))
+        self.browser.setUrl(QUrl("https://testmcq.site/onlineexam/"))
         self.browser.urlChanged.connect(self.update_urlbar)
         self.browser.loadFinished.connect(self.update_title)
         self.setCentralWidget(self.browser)
@@ -63,7 +63,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("%s - Online Exam" % title)
 
     def navigate_home(self):
-        self.browser.setUrl(QUrl("http://testmcq.site/"))
+        self.browser.setUrl(QUrl("https://testmcq.site/onlineexam/"))
 
     def navigate_to_url(self):
         q = QUrl(self.urlbar.text())

@@ -1,0 +1,16 @@
+# install latest python version for your operating system, then
+
+Python 3.12.2
+
+# upgrade pip:
+pip install --upgrade pip
+
+# uninstall everything
+pip uninstall PyQt5
+pip uninstall PyQt5-sip
+pip uninstall PyQtWebEngine
+
+# install everything
+pip install PyQt5
+pip install PyQt5-sip
+pip install PyQtWebEngine

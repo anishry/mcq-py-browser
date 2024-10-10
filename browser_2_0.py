@@ -36,7 +36,7 @@ class SystemInfoApp(QMainWindow):
 
         self.ip_input = QLineEdit()
         self.ip_input.setPlaceholderText("Enter IP address here")
-        self.ip_input.setText("192.168.1.33")  
+        self.ip_input.setText("192.168.5.106")  
         self.ip_input.setStyleSheet("font-weight: bold; letter-spacing: 2px;")
 
         self.launch_button = QPushButton("Launch")
